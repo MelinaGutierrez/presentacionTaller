@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="./src/style.css">    
+</head>
+<body>
+    <header>
+        <h1>Hypertext  Tag Language</h1>
+        <a href="index.html"><img class="atras" src="./src/img/casa.png" alt="back"></a>
+    </header>
+    <div class="container">
+        <aside>
+            <h2>INDICE</h2>
+            <ul>
+                <li><a href="#seccion1">QUE ES HTML</a></li>
+                <li><a href="#seccion2">ESTRUCTURA</a></li>
+                <li><a href="#seccion3">ETIQUETAS</a></li>
+                <li><a href="#seccion4">ENLACES</a></li>
+                <li><a href="#seccion5">MEDIA</a></li>
+                <li><a href="#seccion6">FORMULARIOS</a></li>
+            </ul>
+        </aside>
+        <main>                      
+            <div  id="seccion1">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>QUE ES HTML</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('primero')">+</span>         
+                </div>
+                <div class="oculto">
+                    <p id="primero" class="textoMostrado">HTML es un lenguaje de marcado que define la estructura de tu contenido. <br> 
+                        HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del contenido para que se vean o comporten de una determinada manera. <br>
+                        Las etiquetas de encierre pueden hacer de una palabra o una imagen un hipervínculo a otro sitio, se pueden cambiar palabras a cursiva, agrandar o achicar la letra, etc.</p>                
+                </div>
+            </div>  
+            <div  id="seccion2">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>ESTRUCTURA</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('segundo')">+</span>         
+                </div>
+                <div  class="oculto">
+                    <p id="segundo" class="textoMostrado">< head ><br>
+                        < body >
+                        <h3>Elemento < head > </h3>
+                        Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos<br>
+                       <h3>Elemento < body ></h3>
+                       Representa el contenido de un documento HTML
+                       <h4>Estructura del documento HTML <span class="mi_boton ver_mas" onclick="mostrarMas('im4')">imagen</span></h4>                        
+                    <div id="im4" class="textoMostrado">
+                        <img src="./src/img/1.jpeg"  alt="img1">
+                    </div>                                               
+                      <h4>Estructura de las etiquetas<span class="mi_boton ver_mas" onclick="mostrarMas('im2')">imagen</span></h4>
+                      <div id="im2" class="textoMostrado">
+                        <img src="./src/img/2.jpeg"  alt="img1">
+                    </div>                                              
+
+                    </p>                
+                </div>
+            </div>  
+            <div  id="seccion3">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>ETIQUETAS</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('tercero')">+</span>         
+                </div>
+                <div  class="oculto">
+                    <ul id="tercero" class="textoMostrado">
+                        <li>Etiquetas anidadas</li><p>Se conoce como etiquetas anidadas cuando en
+                            el contenido de una etiqueta existe otra
+                            etiqueta</p>
+                        <li>etiquetas semànticas</li><p>Ayudan a definir la estructura del documento y
+                            permiten que las páginas web sean mejor indexadas
+                            por los buscadores</p>
+                        <li>Enlaces</li>Un hiperenlace se escribe con la etiqueta < a > y permite ir
+                        (navegar) a un recurso de internet.
+                        <li>Listas</li>Genera listas dependiendo de ol, ul.
+                    </ul>                
+                </div>
+            </div>  
+            <div  id="seccion4">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>MEDIA</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('cuarto')">+</span>         
+                </div>
+                <div  class="oculto">
+                    <p id="cuarto" class="textoMostrado">se utiliza para incrustar una imagen en una página HTML</p>                
+                    <span class="mi_boton ver_mas" onclick="mostrarMas('im4')">imagen</span>                       
+                    <div id="im4" class="textoMostrado">
+                        <img src="./src/img/1.jpeg"  alt="img1">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fXpMiweCC_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <audio src="">
+                            <source src="forelisa.wav" type="audio/wav">
+                            Tu navegador no soporta audio HTML5.
+                    
+                        </audio>
+                    </div>                               
+                </div>
+            </div>  
+            <div  id="seccion6">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>FORMULARIOS</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('sexto')">+</span>         
+                </div>
+                <div  class="oculto">
+                    <p id="sexto" class="textoMostrado">Representa una sección de un documento que contiene controles
+                        interactivos que permiten a un usuario enviar información a un
+                        servidor web</p>                
+                </div>
+            </div>           
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>opening tag</td>
+                        <td>consiste en el nombre del elemento (en este caso, p), 
+                            encerrado por paréntesis angulares (< >) de apertura 
+                            y cierre. Establece dónde comienza o empieza a tener 
+                            efecto el elemento —en este caso, dónde es el comienzo 
+                            del párrafo—.</td>
+                    </tr>
+                    <tr>
+                        <td>closing tag</td>
+                        <td> es igual que la etiqueta de apertura, excepto que 
+                             incluye una barra de cierre (/) antes del nombre de 
+                             la etiqueta. Establece dónde termina el elemento —en 
+                             este caso dónde termina el párrafo—.</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td> este es el contenido del elemento, que en este caso es 
+                             sólo texto.</td>
+                    </tr>
+                    <tr>
+                        <td>element</td>
+                        <td> la etiqueta de apertura, más la etiqueta de cierre, más 
+                             el contenido equivale al elemento.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align:center;">
+            <table border ="1" style="margin: 0 auto;">
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Elemento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                            <td>Provee información general </td>
+                            <td>Head</td>
+                        </tr>
+                        <tr>
+                            <td>Representa los niveles de seccion</td>
+                            <td >H1</td>
+                        </tr>
+                        <tr>
+                            <td>Es el elemento encargado de indicar la información de estilo</td>
+                            <td>Style</td>
+                        </tr>
+                        <tr>
+                            <td>Define el título del documento que se muestra en un browser la barra de título o la pestaña de una página.</td>
+                            <td>Title</td>
+                        </tr>
+                        <tr>
+                            <td>Representa el contenido de un documento HTML.</td>
+                            <td>Body</td>
+                        </tr>
+                        <tr>
+                            <td>Sirve para crear secciones o agrupar contenidos.</td>
+                            <td>Div</td>
+                        </tr>
+                        <tr>
+                            <td>Es el apropiado para distribuir el texto en párrafos.</td>
+                            <td>P</td>
+                        </tr>
+                        <tr>
+                            <td>Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.</td>
+                            <td>Span</td>
+                        </tr>
+                        <tr>
+                            <td>Representa datos en dos o mas dimensiones.</td>
+                            <td>Table</td>
+                        </tr>
+                        <tr>
+                            <td>Define la celda de una tabla que contiene datos. Esta participa en el modelo de tablas.</td>
+                            <td>Td</td>
+                        </tr>
+                        <tr>
+                            <td>Define una fila de celdas en una tabla. Estas pueden ser una mezcla de elementos td y th.</td>
+                            <td>Tr</td>
+                        </tr>
+                        <tr>
+                            <td>Representa una seccion generica de un documento</td>
+                            <td >Selection</td>
+                        </tr>
+                        <tr>
+                            <td>Declaracion que le informa al navegador la version de HTML en uso</td>
+                            <td>Doctype</td>
+                        </tr>
+                        <tr>
+                            <td>Porporciona informacion del documento por medio de atributos</td>
+                            <td>Meta</td>
+                        </tr>
+                        <tr>
+                            <td>An element is a part of a webpage. In XML and HTML, an element may contain a data item or a chunk of text or an image, or perhaps nothing.</td>
+                            <td>Element</td>
+                        </tr>
+                        <tr>
+                            <td>Describe contenido destinado a la parte superior o encabezado de pagina</td>
+                            <td>Header</td>
+                        </tr>
+                        <tr>
+                            <td>Encierra contenido independiente del resto de la pagina web</td>
+                            <td>Article</td>
+                        </tr>
+                        <tr>
+                            <td>Podemos establecer el contenido mostrado por el navegador</td>
+                            <td>Body</td>
+                        </tr>
+                        <tr>          
+                            <td>Se utiliza para indicar contenido que tipicamente cubre un tema especifico</td>
+                            <td >Section</td>
+                        </tr>
+                        <tr>
+                            <td>Representa una seccion que proporciona enlaces de navegacion</td>
+                            <td >Nav</td>
+                        </tr>
+                        <tr>
+                            <td>Representa una parte de un documento cuyo contenido solo esta directamente relacaionado con el contenido que lo rodea</td>
+                            <td>Aside</td>
+                        </tr>
+                        <tr>
+                            <td>Representa un pie de pagina para su ancestro de la categoria SECTIONING mas cercano</td>
+                            <td>Footer</td>
+                        </tr>
+                        <tr>
+                            <td>Representa los contenidos dominantes del documento</td>
+                            <td>Main</td>
+                        </tr>
+                        <tr>
+                            <td>Hace que el navegador avance a la siguiente linea antes de mostrar el siguiente elemento</td>
+                            <td>Br</td>
+                        </tr>
+                        <tr>
+                            <td>Representa una transicion entre parrafos a un tema separado, pero relacionado</td>
+                            <td>Hr</td>
+                        </tr>
+                        <tr>
+                            <td>Le indica al navegador donde podria razonablemente insertar un salto de linea</td>
+                            <td>Wbr</td>
+                        </tr>
+                        <tr>
+                            <td>Permite definir subindices</td>
+                            <td>Sub</td>
+                        </tr>
+                        <tr>
+                            <td>Indica que su contenido tiene una gran importancia, seriedad o urgencia</td>
+                            <td>Strong</td>
+                        </tr>
+                        <tr>
+                            <td>Lo usamos cuando queremos dar enfasis al lenguaje hablado, acentuamos y prolongamos</td>
+                            <td>EM</td>
+                        </tr>
+                        <tr>
+                            <td>Permite resaltar texto de interes</td>
+                            <td>Mark</td>
+                        </tr>
+                        <tr>
+                            <td>Indica que el texto encerrado es una cita corta en linea</td>
+                            <td>Q</td>
+                        </tr>
+                        <tr>
+                            <td>Indica que el texto contenido es una cita extensa</td>
+                            <td>Blockquote</td>
+                        </tr>
+                        <tr>
+                            <td>Permite incluir  el nombre de un trabajo.</td>
+                            <td>Cite</td>
+                        </tr>
+                        <tr>
+                            <td>Se utiliza para identificar el termino a definir, mientras que la definicion del termino se coloca fuera del elemento.</td>
+                            <td>Dfn</td>
+                        </tr>
+                        <tr>
+                            <td>Se utiliza para identificar una abreviatura</td>
+                            <td>Abbr</td>
+                        </tr>
+                        <tr>
+                            <td>Permite definir la letra chica y los comentarios secundarios de una pagina</td>
+                            <td>Small</td>
+                        </tr>
+                        <tr>
+                            <td>Marca las partes de un texto que han sido añadidos al documento</td>
+                            <td>Ins</td>
+                        </tr>
+                        <tr>
+                            <td>Marca las partes de un texto que han sido eliminadas del documento</td>
+                            <td>Del</td>
+                        </tr>
+                        <tr>
+                            <td>Muestra el texto tachado con una línea que lo atraviesa</td>
+                            <td>S</td>
+                        </tr>
+                        <tr>
+                            <td>Muestra su contenido con formato para indicar que el texto es un fragmento corto de código de computadora</td>
+                            <td>Code</td>
+                        </tr>
+                        <tr>
+                            <td>Representa un fragmento de texto en línea que indica la entrada del usuario desde un teclado</td>
+                            <td>KDB</td>
+                        </tr>
+                        <tr>
+                            <td>Contiene texto que debe presentarse exactamente como está escrito en el archivo HTML</td>
+                            <td>Pre</td>
+                        </tr>
+                        <tr>
+                            <td>Indica que el HTML contenido proporciona información de contacto para una persona o personas, o para una organización</td>
+                            <td>Address</td>
+                        </tr>
+                        <tr>
+                            <td>Es un elemnto HTML que define las filas de una tabla</td>
+                            <td>Thead</td>
+                        </tr>
+                        <tr>
+                            <td>Elemento de encapsulamiento que define las columnas y sus contenidos</td>
+                            <td>Tbody</td>
+                        </tr>
+                        <tr>
+                            <td>Elemento que define la celda de una fila en una tabla</td>
+                            <td>Tr</td>
+                        </tr>
+                        <tr>
+                            <td>Elemento que define las celdas en la cabecera de ua tabla</td>
+                            <td>TH</td>
+                        </tr>
+                </tbody>
+            </table>
+            <script src="./src/src.js"></script>              
+        </main>
+    </div>
+
+    <footer>
+        <p>Taller de Sistemas de información</p>        
+        <p class="copy">© Copyright 2023</p>   
+    </footer>
+</body>
+</html>

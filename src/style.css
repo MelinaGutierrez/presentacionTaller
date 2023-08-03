@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {  
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #0078AA;
+  color: #F6F6F6;
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+  flex: 0 0 100px;
+  background-color: #F2DF3A;
+  padding: 10px;
+}
+
+aside h2 {
+  margin-top: 0;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+
+}
+li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;    
+}
+li a:hover{
+  color: #0078AA;
+}
+main {  
+  flex: 1;
+  padding:10px 10px;
+  background-color: #82bbdfbd;
+}
+section {
+  margin-bottom: 40px;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+.integrantes{
+  color: #f0f0f0;
+}
+.menu{  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header1{
+  display: flex;   
+  align-items: center;
+}
+.inicio{
+  font-size: 40px;  
+}
+.logo{
+  width: 150px;
+  height: 140px;
+}
+.html{
+  width: 250px;
+  height: 250px;  
+  opacity: 50%;
+  transition: opacity 250ms ease, transform 250ms ease;
+  -webkit-transition: opacity 250ms ease, transform 250ms ease;
+}
+.html:hover{
+  opacity: 100%;
+  opacity: 1;
+  transform: scale(1.5); 
+}
+.css{  
+  width: 190px;
+  height: 190px;  
+  opacity: 50%;
+  transition: opacity 250ms ease, transform 250ms ease;
+  -webkit-transition: opacity 250ms ease, transform 250ms ease;
+}
+.css:hover{
+  opacity: 100%;
+  opacity: 1;
+  transform: scale(1.5); 
+}
+.atras{
+  width: 60px;
+  height: 60px;  
+}
+header .atras{
+  margin-left: 55rem;
+}
+.contenido:hover{
+  background-color: #3AB4F2;  
+}
+.contenido{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: center;
+  max-width: 70%;
+  border-radius: 0.5rem;
+}
+.titulo{
+  color: #F6F6F6;
+  margin-left: 10px;
+}
+.contenido:hover{  
+  color: #F6F6F6;
+}
+.mi_boton{
+  /* background-color: white; */
+  border: none;
+  color: #0078AA;
+  font-size: 30px;
+  max-height: 40px;  
+  margin-right: 10px;
+  cursor: pointer;
+}
+.mi_boton:hover{
+  max-height: 80px;
+  width: 30px;
+  text-align: center;  
+  background-color: #0078AA;
+  color: #F6F6F6;      
+}
+.ver_mas{  
+  font-size: 20px
+}
+li{
+  color: #F6F6F6;
+  font-size: 18px;
+  margin-top: 10px;
+}
+#botonArriba{
+  position: fixed;
+  bottom: 20px;
+  right: -100px;
+  width: 40px;
+  transition: all 1s;
+}

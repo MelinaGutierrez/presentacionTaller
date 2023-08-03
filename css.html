@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cascading Style Sheets</h1>        
+        <a href="index.html"><img class="atras" src="./src/img/casa.png" alt="back"></a>
+    </header>
+    <div class="container">
+        <aside>
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#seccion1">QUE ES CSS</a></li>
+                <li><a href="#seccion2">SINTAXIS</a></li>
+                <li><a href="#seccion3">LIMITACIONES</a></li>
+                <li><a href="#seccion4">VENTAJAS</a></li>
+                <li><a href="#seccion5">UNIDADES</a></li>
+                <li><a href="#seccion6">POSICIONAMIENTO</a></li>
+                <li><a href="#seccion7">FLEXBOX</a></li>
+                <li><a href="#seccion8">MEDIA QUERIS</a></li>
+                <li><a href="#seccion9">PSEUDOCLASES</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div  id="seccion1">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>QUE ES CSS</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('primero')">+</span>         
+                </div>
+                <div id="primero" class="oculto">
+                    <p class="textoMostrado">Es el lenguaje utilizado para describir la presentación de documentos HTML o XML. CSS describe como debe ser renderizado el elemento estructurado en pantalla.</p>
+                    <p>CSS es uno de los lenguajes base de la Open Web y posee una especificación estandarizada por parte del W3C. Desarrollado en niveles, <a href="css1.html">CSS1</a> es ahora obsoleto, <a href="css2.html">CSS2.1</a> es una recomendación y <a href="css3.html">CSS3</a>, ahora dividido en módulos más pequeños, está progresando en camino al estándar.</p>
+                </div>
+            </div>  
+            <div  id="seccion2">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>SINTAXIS</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('segundo')">+</span>         
+                </div>
+                <div id="segundo" class="oculto">
+                    <p class="textoMostrado">
+                        <ul>
+                            <li>Declaracion</li> <p>CSS tiene una sintaxis simple, y usa un conjunto de palabras clave en inglés para especificar los nombres de varias propiedades de estilo.</p>
+                            <span class="mi_boton ver_mas" onclick="mostrarMas('im1')">imagen</span>                                     
+                            <div id="im1" class="textoMostrado">
+                                <img src="./src/img/img1.PNG" alt="img1">
+                            </div>    
+                            <li>Bloques de declaración</li><p>Las declaraciones se agrupan en bloques , es decir en una estructura delimitada por una llave de apertura, ' {‘ y una de cierre, ' }'
+                            </p>
+                            <span class="mi_boton ver_mas" onclick="mostrarMas('im2')">imagen</span>                                     
+                            <div id="im2" class="textoMostrado">
+                                <img src="./src/img/img2.PNG" alt="img2">
+                            </div>    
+                            <li>Reglas</li><p>El bloque de declaraciones de grupo selector de parejas se denomina conjunto de reglas o, a menudo, simplemente una regla .
+                            </p>
+                            <span class="mi_boton ver_mas" onclick="mostrarMas('im3')">imagen</span>                                     
+                            <div id="im3" class="textoMostrado">
+                                <img src="./src/img/img3.jpg" alt="img3">
+                            </div>    
+                        </ul>                        
+                    </p>
+                </div>
+            </div>  
+            <div  id="seccion3">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>LIMITACIONES</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('tercero')">+</span>         
+                </div>
+                <div  class="oculto">
+                    <ul id="tercero" class="textoMostrado">
+                        <li>Los selectores no pueden ascender</li>
+                        <li>No se pueden nombrar estilos CSS</li>
+                        <li>Las pseudo-clases dinámicas no se pueden controlar</li>
+                        <li>No se pueden incluir estilos de una regla dentro de otra</li>
+                        <li>No se puede seleccionar texto específico sin alterar el marcado</li>
+                    </ul>                
+                </div>
+            </div>  
+            <div  id="seccion4">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>VENTAJAS</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('cuarto')">+</span>         
+                </div>
+                <div  class="oculto">
+                    <ul id="cuarto" class="textoMostrado">
+                        <li>Separación del contenido y la presentación</li>
+                        <li>Accesibilidad</li>
+                        <li>Formateo de página</li>
+                        <li>Ancho de banda</li>
+                        <li>Consistencia del sitio</li>
+                    </ul>                
+                </div>
+            </div>  
+            <div  id="seccion5">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>UNIDADES</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('quinto')">+</span>         
+                </div>
+                <div  class="oculto">
+                    <ul id="quinto" class="textoMostrado">
+                        <li>Absolutas</li><p>Nos permiten establecer un valor fijo</p>
+                        <li>Relativas</li><p>Medidas flexibles</p>
+                    </ul>                
+                </div>
+            </div>  
+            <div  id="seccion6">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>POSICIONAMIENTO</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('sexto')">+</span>         
+                </div>
+                <div  class="oculto">
+                    <p id="sexto" class="textoMostrado">El modelo de caja CSS es esencialmente una caja que envuelve cada elemento
+                        HTML. Consiste en: márgenes, bordes, relleno y el contenido</p>                
+                </div>
+                <span class="mi_boton ver_mas" onclick="mostrarMas('im7')">imagen</span>                                     
+                <div id="im7" class="textoMostrado">
+                    <img src="./src/img/img7.PNG" alt="img1">
+                </div>
+                <ul>
+                    <li>Propiedad static</li><p>Los elementos posicionados estáticos no se ven afectados por las propiedades superior, inferior, izquierda y
+                        derecha</p>
+                    <li>Propiedad relative</li><p>Con tan solo establecer la propiedades superior, de un elemento relativamente posicionado hará que se ajuste
+                        fuera de su posición normal</p>
+                    <li>Propiedad fixed</li><p>se coloca en relación con la ventana gráfica, lo que significa que siempre permanece en el mismo lugar, incluso
+                        si se desplaza la página</p>
+                    <li>Propiedad absolute</li><p>Se coloca en relación con el contenedor posicionado más cercano</p>
+                </ul>
+                <span class="mi_boton ver_mas" onclick="mostrarMas('im8')">imagen</span>                                     
+                <div id="im8" class="textoMostrado">
+                    <img src="./src/img/img8.PNG" alt="img1">
+                </div>
+            </div> 
+            <div  id="seccion7">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>FLEBOX</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('septimo')">+</span>         
+                </div>
+                <div  class="oculto">
+                    <p id="septimo" class="textoMostrado">El módulo de diseño de caja flexible facilita el diseño de una
+                        estructura de diseño receptiva flexible sin usar flotación o
+                        posicionamiento</p>                
+                    <span class="mi_boton ver_mas" onclick="mostrarMas('im5')">imagen</span>                                     
+                    <div id="im5" class="textoMostrado">
+                        <img src="./src/img/img5.PNG" alt="img1">
+                        <img src="./src/img/img6.PNG" alt="img1">
+                    </div>
+                </div>
+            </div> 
+            <div  id="seccion8">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>MEDIAS QUERIS</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('octavo')">+</span>         
+                </div>
+                <div id="octavo" class="oculto">
+                    <p  class="textoMostrado">La regla @media, introducida en CSS2, es una técnica
+                        popular para entregar una hoja de estilo personalizada a
+                        equipos de escritorio, portátiles, tabletas y teléfonos
+                        móviles (como teléfonos iPhone y Android)</p> 
+                    <span class="mi_boton ver_mas" onclick="mostrarMas('im4')">imagen</span>                                     
+                    <div id="im4" class="textoMostrado">
+                        <img src="./src/img/img4.PNG" alt="img1">
+                    </div>                 
+                </div>
+            </div> 
+            <div  id="seccion9">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h3>PSEUDOCLASES</h3>
+                    </div>                    
+                    <span class="mi_boton" onclick="mostrarMas('noveno')">+</span>         
+                </div>
+                <div id="noveno" class="oculto">
+                    <p  class="textoMostrado">Una pseudoclase CSS es una palabra clave que se añade a los
+                        selectores y que especifica un estado especial del elemento
+                        seleccionado.</p> 
+                    <UL>
+                        <li>:hover</li><p>aplicará un estilo cuando el usuario pase
+                            el cursor sobre el elemento especificado por el selector.</p>
+                        <li>:activate</li><p>especifica y selecciona un elemento activo, y se utiliza normalmente para enlaces < a > pero puede ser utilizada para otros elementos</p>
+                        <li>:link</li><p>se utiliza para seleccionar y dar estilo a los enlaces que no fueron visitados</p>
+                    </UL>
+                </div>
+            </div> 
+            <a href="#seccion1"><img src="./src/img/arriba.png" id="botonArriba"></a>
+            <script src="./src/src.js"></script>              
+        </main>
+    </div>
+        <footer>
+        <p>Taller de Sistemas de información</p>        
+        <p class="copy">© Copyright 2023</p>   
+    </footer>
+</body>
+</html>
